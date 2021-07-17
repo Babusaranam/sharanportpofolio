@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- <link rel="stylesheet" href="./App.css"> -->
+     </head>
+    <body class="main">
+<!--         
+            <h1 class="demo">hello</h1>
+            <h2 class="demo">hello</h2>
+            <h3 class="demo">hello</h3>
+            <h4 class="demo">hello</h4>
+            <h5 class="demo">hello</h5>
+            <h6 class="demo">hello</h6>
+      
+        <button type="button" onclick="change()">tryit</button>
+        <script>
+            function change(){
+              let val = document.getElementsByClassName("demo");
+                console.log('val',val)
+                // for(i=0;i<val;i++){
+                //     document.getElementsByClassName("demo").innerHTML =  'val===(hello+1)';
+                for(i in document.getElementsByClassName("demo")){
+                    console.log('i',i)
+                     document.getElementsByClassName("demo")[i].innerHTML =`hello${Number(i)+1}`; 
+                }
+               
+            }
+</script>
+
+        <h1>hello</h1>
+<input  id="inputval" type="text" class="form-control " onchange="dispaly(event)"/>
+<p id ="results"></p>
+         <script>
+             function dispaly(event){
+               let text= document.getElementById("inputval").value;
+               document.getElementById("results").innerHTML=text;
+            let text=event.target.value;
+            document.getElementById("results").innerHTML=text
+             }
+          </script>
+         <h1>Increment/Decrement</h1>
+         <button type="button"  onclick="count('inc')">+</button>
+         <b id="value">0</b>
+         <button type="button" onclick="count('dec')">-</button>
+                 
+           <script>
+               function count(type){
+                var fuck=document.getElementById("value");
+                var  fucktxt =fuck.innerHTML;
+                if(type ==='inc'){
+                   
+                    fuck.innerHTML=Number(fucktxt)+1;
+                    console.log('Number(fucktxt)+1',Number(fucktxt)+1);
+                }else{
+                    fuck.innerHTML=Number(fucktxt)-1;
+                }
+               }
+           </script>  -->
+        <h1>hello have to workon input & addition</h1>
+        <input id="babutxt" type="text" class="form-control" onchange="dispaly()"/>
+        <button type="button"  onclick="count('inc')">+</button>
+        <span id="result"></span>
+        <button type="button" onclick="count('dec')">-</button>
+    
+      <script>
+          function dispaly(){
+              let intext=document.getElementById("babutxt").value;
+              console.log('intext',intext);
+              document.getElementById("result").innerHTML=intext;
+          }
+        function count(type){
+                var elt=document.getElementById("result");
+                var  elttxt = elt.innerHTML;
+                if(type ==='inc'){
+                    elt.innerHTML=Number(elttxt)+1;
+                    console.log('Number(elttxt)+1',Number(elttxt)+1)
+                }else{
+                    elt.innerHTML=Number(elttxt)-1;
+                }
+               } 
+      </script>
+    </body>
+</html>
